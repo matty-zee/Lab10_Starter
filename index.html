@@ -23,18 +23,6 @@
   <link rel="stylesheet" href="assets/styles/global.css" />
   <script src="assets/scripts/partyHorn.js" type="module"></script>
 
-  <script>
-    // Generate a random number between 0 and 1
-    const randomNumber = Math.random();
-    // Determine if the class should be applied
-    const shouldApplyClass = randomNumber < 0.5;
-    // Get the body element
-    let body = document.querySelector('body');
-    // Apply or remove the "blue" class based on the random number
-    if (shouldApplyClass) {
-         body.classList.add('blue');
-    }
-  </script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0MSJL5RLZX"></script>
@@ -52,6 +40,20 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4X2H7V"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+
+  <script>
+    // Generate a random number between 0 and 1
+    const randomNumber = Math.random();
+    // Determine if the class should be applied
+    const shouldApplyClass = randomNumber < 0.5;
+    // Get the body element
+    let body = document.querySelector('body');
+    // Apply or remove the "blue" class based on the random number
+    if (shouldApplyClass) {
+         body.classList.add('blue');
+    }
+  </script>
+  
   <header>
     <nav>
       <a href="speechSynth.html" title="Go to speech synthesizer">Speech Synthesizer</a>
